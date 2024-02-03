@@ -1,13 +1,13 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser'
 
 const EmgBtn = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleClick = () => {
-        // Handle emergency button click event here (e.g., send email)
-        // You can use the email and password state variables if needed
-        console.log("Emergency button clicked!");
+    const handleClick = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_8rvo9b9', 'template_k8qolbg', e.target, 'c_2qCBvKJ3ocqXu5x')
     };
 
     return (
