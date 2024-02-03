@@ -1,13 +1,13 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth} from 'firebase/auth';
+import { getAuth } from 'firebase/auth';
 import { getFirestore, collection, getDocs, getDoc } from 'firebase/firestore';
+import { getAnalytics } from "firebase/analytics";
 
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseApp = {
+const firebaseConfig = {
   apiKey: "AIzaSyDSbbb9P2HS5Jgm62Kp3etDkUxX687Qc4w",
   authDomain: "goldenyrs-36b19.firebaseapp.com",
   projectId: "goldenyrs-36b19",
@@ -17,8 +17,12 @@ const firebaseApp = {
   measurementId: "G-3170QQV7GW"
 };
 
+//Initalize Firebase
+const app = initializeApp(firebaseConfig);
+
 // Initialize Firebase Authentication and get a reference to the service
-const auth = getAuth(app);
+export const auth = getAuth(app);
+
 
 
 
