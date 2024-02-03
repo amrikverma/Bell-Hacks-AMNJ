@@ -11,7 +11,7 @@ const EmgBtn = () => {
     };
 
     return (
-        <div style={{ position: "fixed", bottom: "10px", left: "10px", zIndex: "1000" }}>
+        <div id="emergencybutton" style={{ position: "fixed", bottom: "10px", left: "10px", zIndex: "1000"}}>
             <button onClick={handleClick} style={{ padding: "0", border: "none", background: "none" }}>
                 <img 
                     src="https://th.bing.com/th/id/R.5e6d8788a6cdc41aae6d7a4b131ec2f8?rik=TPPufOG2LggJxA&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fdcr%2f6yG%2fdcr6yGrKi.jpg&ehk=ze5MszvAz9lfvLBE4oIcWjNfk7GHGz2YkPJGsMOcyPY%3d&risl=&pid=ImgRaw&r=0" 
