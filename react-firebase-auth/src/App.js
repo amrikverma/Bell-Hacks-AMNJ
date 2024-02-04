@@ -4,10 +4,11 @@ import SignIn from './components/auth/SignIn';
 import NavBar from './NavBar';
 import SignUp from './components/auth/SignUp';
 import AuthDetails from './components/auth/AuthDetails';
-import EmergencyBtn from './components/auth/EmergencyBtn'
+import EmergencyBtn from './components/auth/EmergencyBtn';
 import {  BrowserRouter as Router,  Routes,  Route } from "react-router-dom";
-import Home from "./components/Home"
-import NotFound from "./components/NotFound"
+import Home from "./components/Home";
+import NotFound from "./components/NotFound";
+import Scheduler from './components/Scheduler';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/logout" element={<AuthDetails/>} />
       </Routes>
     </Router>
+    <Scheduler/>
     <EmergencyBtn/>
 
       
