@@ -4,7 +4,16 @@ export default function NavBar(){
             <a href="/" className="site-title">Golden Yrs</a>
             <ul>
                 <li>
-                    <a href="/pricing">Log in</a>
+                    <a href="/SignUp"> Sign Up</a>
+                </li>
+                <li>
+                    
+                    <a href="./components/auth/SignIn">Log in</a>
+                    
+                </li>
+                <li>
+                    
+                    <a href="./components/auth/AuthDetails">Log out</a>
                     
                 </li>
             </ul>
