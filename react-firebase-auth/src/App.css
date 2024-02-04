@@ -55,6 +55,6 @@
   height: 50px; /* Adjust the size of the image as needed */
 }
 
-#emergencybutton:hover {
-  cursor: grab;
+#emergencyButton:hover {
+  cursor: help;
 }
