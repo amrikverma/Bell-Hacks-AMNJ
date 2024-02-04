@@ -16,7 +16,11 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^6.22.0",
+=======
+    "react-modal": "^3.16.1",
+>>>>>>> 235b87422b1cca4075f8a7c3e50db1305b3b2359
     "react-scripts": "5.0.1",
     "react-simple-chatbot": "^0.6.1",
     "web-vitals": "^2.1.4"
