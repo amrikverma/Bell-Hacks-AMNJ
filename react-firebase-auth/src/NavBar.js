@@ -1,19 +1,21 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 export default function NavBar(){
     return (
         <nav className="nav">
-            <a href="/" className="site-title">Golden Yrs</a>
+        <a href="/Home" className="site-title">Golden Yrs</a>
             <ul>
                 <li>
-                    <a href="/SignUp"> Sign Up</a>
+                    <a href="/signup"> Sign Up</a>
                 </li>
                 <li>
                     
-                    <a href="./components/auth/SignIn">Log in</a>
+                    <a href="signin">Log in</a>
                     
                 </li>
                 <li>
                     
-                    <a href="./components/auth/AuthDetails">Log out</a>
+                    <a href="/logout">Log out</a>
                     
                 </li>
             </ul>
