@@ -4,10 +4,7 @@ import SignIn from './components/auth/SignIn';
 import NavBar from './NavBar';
 import SignUp from './components/auth/SignUp';
 import AuthDetails from './components/auth/AuthDetails';
-import EmergencyBtn from './components/auth/EmergencyBtn';
-import ScheduleMeeting from './components/ScheduleMeeting';
-
-
+import EmergencyBtn from './components/auth/EmergencyBtn'
 
 function App() {
   return (
@@ -17,7 +14,6 @@ function App() {
       <SignUp/>
       <AuthDetails/>
       <EmergencyBtn/>
-      <ScheduleMeeting/>
     </div>
   );
 }

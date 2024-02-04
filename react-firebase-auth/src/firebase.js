@@ -1,10 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
-import firebase from "firebase/compat/app";
-// Required for side-effects
-import "firebase/firestore";
-
-
+import { getFirestore, collection, getDocs, getDoc } from 'firebase/firestore';
+import { getAnalytics } from "firebase/analytics";
 
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -26,9 +23,6 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 export const auth = getAuth(app);
 
-const db = firebase.firestore();
-
-export { db, firebase };
 
 
 
