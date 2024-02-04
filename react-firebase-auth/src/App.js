@@ -8,6 +8,7 @@ import EmergencyBtn from './components/auth/EmergencyBtn'
 import {  BrowserRouter as Router,  Routes,  Route } from "react-router-dom";
 import Home from "./components/Home"
 import NotFound from "./components/NotFound"
+import Page2 from "./components/Page2"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/*" element={<NotFound/>}/>
         <Route path="/logout" element={<AuthDetails/>} />
+        <Route path="/learn-more" element={<Page2 />} />
       </Routes>
     </Router>
     <EmergencyBtn/>
